@@ -19,6 +19,7 @@ This is a Spring Boot Rest Backend template - Spring Boot ile geliştirilmiş Re
 - [x] Exception Localization Service - Hatalar İçin Yabancı Dil Desteği Servisleri
 - [x] Exception Localization Service - Hatalar İçin Yabancı Dil Desteği Servisleri
 - [x] Error - Exception Messages Get From Database(MongoDB) - Hata Mesajlarının Veri Tabanından Alınması
+- [x] GUI Texts Get From Database(MongoDB) - Kullanıcı Arayüzü Metinlerinin Veri Tabanından Alınması
 - [ ] Created Some Error - Exception Messages In Database - Veri Tabanına Bazı Hata Mesajları Eklendi
 - [x] Created DEV-LOCAL-PROD Application Properties Templates - DEV-LOCAL-PROD Uygulama Özellikleri Şablonları Oluşturuldu
 - [x] Created Authorization Annotations Templates - Rol Kontrolü İçin Anatasyon Şablonları Oluşturuldu 
