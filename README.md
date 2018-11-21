@@ -1,11 +1,11 @@
 
 This is a Spring Boot Rest Backend template - Spring Boot ile geliştirilmiş Rest Backend şablonudur.
 
-##### This project aim fast start to a project. - Bu proje yeni bir projeye başlarken hızlı başlamayı hedeflemektir.
+#### This project aim fast start to a project. - Bu proje yeni bir projeye başlarken hızlı başlamayı hedeflemektir.
 
 
 
-###### The Project Features - Proje Özellikleri
+##### The Project Features - Proje Özellikleri
 
 - [x] Add Rest Custom Authentication - Rest Servis Login İşlemi
 - [x] ModelMapper Added for DTO - DTO'lar İçin Model Çevirici (ModelMapper Repository - https://mvnrepository.com/artifact/org.modelmapper/modelmapper)
@@ -25,7 +25,7 @@ This is a Spring Boot Rest Backend template - Spring Boot ile geliştirilmiş Re
 - [x] Added Example For Inheritance Config - Kalıtım Ayarları İçin Örnek Eklendi ( Note - Model&Controller&Service )
 
 
-
+###### Will Do - Yapılacaklar
 - [ ] Mail Server Connection Services - E-mail Bağlantı Servisleri
 - [ ] Created Some Error - Exception Messages In Database - Veri Tabanına Bazı Hata Mesajları Eklendi
 - [ ] File Storage Services - Dosya Saklama Servisleri
