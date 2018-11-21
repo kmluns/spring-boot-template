@@ -12,7 +12,6 @@ This is a Spring Boot Rest Backend template - Spring Boot ile geliştirilmiş Re
 - [x] Add Authorization - Rol Kontrolü
 - [x] MongoDB Connection - MongoDB Database Bağlantısı
 - [x] Mail Server Models - E-mail Sunucu Modelleri
-- [ ] Mail Server Connection Services - E-mail Bağlantı Servisleri
 - [x] Created Generic Response Model - Genel Response Modelleri Oluşturuldu
 - [x] Global Exception Handler - Uygulama İçinde Hata Yakalama  
 - [x] Created Custom Exceptions - Özel Hatalar Oluşturuldu
@@ -20,10 +19,14 @@ This is a Spring Boot Rest Backend template - Spring Boot ile geliştirilmiş Re
 - [x] Exception Localization Service - Hatalar İçin Yabancı Dil Desteği Servisleri
 - [x] Error - Exception Messages Get From Database(MongoDB) - Hata Mesajlarının Veri Tabanından Alınması
 - [x] GUI Texts Get From Database(MongoDB) - Kullanıcı Arayüzü Metinlerinin Veri Tabanından Alınması
-- [ ] Created Some Error - Exception Messages In Database - Veri Tabanına Bazı Hata Mesajları Eklendi
 - [x] Created DEV-LOCAL-PROD Application Properties Templates - DEV-LOCAL-PROD Uygulama Özellikleri Şablonları Oluşturuldu
 - [x] Created Authorization Annotations Templates - Rol Kontrolü İçin Anatasyon Şablonları Oluşturuldu 
 - [x] MongoDB Inheritance Configuration - MongoDB Kalıtım Ayaları
 - [x] Added Example For Inheritance Config - Kalıtım Ayarları İçin Örnek Eklendi ( Note - Model&Controller&Service )
+
+
+
+- [ ] Mail Server Connection Services - E-mail Bağlantı Servisleri
+- [ ] Created Some Error - Exception Messages In Database - Veri Tabanına Bazı Hata Mesajları Eklendi
 - [ ] File Storage Services - Dosya Saklama Servisleri
 - [ ] Live Broadcast Services - Canlı Yayın Servisleri
