@@ -23,10 +23,10 @@
 - [x] Created Authorization Annotations Templates - Rol Kontrolü İçin Anatasyon Şablonları Oluşturuldu 
 - [x] MongoDB Inheritance Configuration - MongoDB Kalıtım Ayaları
 - [x] Added Example For Inheritance Config - Kalıtım Ayarları İçin Örnek Eklendi ( Note - Model&Controller&Service )
+- [x] Created Some Error - Exception Messages In Database - Veri Tabanına Bazı Hata Mesajları Eklendi
 
 
 ###### Will Do - Yapılacaklar
 - [ ] Mail Server Connection Services - E-mail Bağlantı Servisleri
-- [ ] Created Some Error - Exception Messages In Database - Veri Tabanına Bazı Hata Mesajları Eklendi
 - [ ] File Storage Services - Dosya Saklama Servisleri
 - [ ] Live Broadcast Services - Canlı Yayın Servisleri
