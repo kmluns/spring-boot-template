@@ -1,6 +1,6 @@
 package com.uns.template.dto.request;
 
-import com.uns.template.model.account.AccountDetail;
+import com.uns.template.authorization.model.AccountDetail;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
