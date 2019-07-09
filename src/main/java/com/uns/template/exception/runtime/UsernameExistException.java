@@ -1,5 +1,6 @@
 package com.uns.template.exception.runtime;
 
+
 import com.uns.template.constant.ErrorMessageConstant;
 import com.uns.template.utils.StaticUtils;
 
@@ -9,6 +10,6 @@ import com.uns.template.utils.StaticUtils;
 public class UsernameExistException extends ApplicationRuntimeException {
 
     public UsernameExistException() {
-        super(StaticUtils.getErrorMessageService().getErrorMessageText(ErrorMessageConstant.USERNAME_EXIST));
+        super(StaticUtils.getErrorMessageService().getErrorMessageText(ErrorMessageConstant.USERNAME_EXIST), ErrorMessageConstant.USERNAME_EXIST);
     }
 }

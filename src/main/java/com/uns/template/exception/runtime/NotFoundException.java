@@ -1,5 +1,6 @@
 package com.uns.template.exception.runtime;
 
+
 import com.uns.template.constant.ErrorMessageConstant;
 import com.uns.template.utils.StaticUtils;
 
@@ -9,6 +10,6 @@ import com.uns.template.utils.StaticUtils;
 public class NotFoundException extends ApplicationRuntimeException {
 
     public NotFoundException() {
-        super(StaticUtils.getErrorMessageService().getErrorMessageText(ErrorMessageConstant.NOT_FOUND));
+        super(StaticUtils.getErrorMessageService().getErrorMessageText(ErrorMessageConstant.NOT_FOUND),ErrorMessageConstant.NOT_FOUND);
     }
 }

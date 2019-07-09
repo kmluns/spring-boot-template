@@ -1,7 +1,6 @@
 package com.uns.template.config;
 
 import com.uns.template.authorization.model.Role;
-import com.uns.template.filter.CorsFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -9,7 +8,9 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.web.session.SessionManagementFilter;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 /**
  * created by kmluns
@@ -24,28 +25,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
-    @Bean
-    CorsFilter corsFilter() { return new CorsFilter(); }
-
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         // @formatter:off
-        httpSecurity.csrf().disable()
-                .addFilterBefore(corsFilter(), SessionManagementFilter.class)
-//                .headers().frameOptions().disable();
+        httpSecurity
+                .csrf()
+                .disable()
+                .formLogin()
+                .disable()
+                .cors()
+
 //                                                                        .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-        ;
-
-
-//        List<Word> words = wordRepository.findAll();
-//
-//        for(Word word : words){
-//            httpSecurity.authorizeRequests()
-//                    .antMatchers(work.getText())
-//                    .hasAnyAuthority(word.getText());
-//        }
-
-        httpSecurity.authorizeRequests()
+                .and()
+                .authorizeRequests()
                 .antMatchers("/","/customLogin", "/test/**", "/index", "/register/*", "/activation/*").permitAll()
                 .antMatchers("/admin", "/admin/**").hasAuthority(Role.ADMIN.toString())
                 .antMatchers("/user", "/user/**").hasAuthority(Role.USER.toString())
@@ -73,21 +65,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // @formatter:on
     }
 
-//    @Bean
-//    CorsConfigurationSource corsConfigurationSource() {
-//        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-//        source.registerCorsConfiguration("/**", new CorsConfiguration().applyPermitDefaultValues());
-//
-//
-//        CorsConfiguration configuration = new CorsConfiguration();
-//        configuration.setAllowedOrigins(Arrays.asList("https://example.com"));
-//        configuration.setAllowedMethods(Arrays.asList("GET","POST"));
-//
-////        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-////        source.registerCorsConfiguration("/**", configuration);
-//        return source;
-//
-//
-//        return source;
-//    }
+    @Bean
+    CorsConfigurationSource corsConfigurationSource() {
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        CorsConfiguration config = new CorsConfiguration();
+        config.setAllowCredentials(true); // you USUALLY want this
+        config.addAllowedOrigin("*");
+        config.addAllowedHeader("*");
+        config.addAllowedMethod("OPTIONS");
+        config.addAllowedMethod("HEAD");
+        config.addAllowedMethod("GET");
+        config.addAllowedMethod("PUT");
+        config.addAllowedMethod("POST");
+        config.addAllowedMethod("DELETE");
+        config.addAllowedMethod("PATCH");
+        source.registerCorsConfiguration("/**", config);
+        return source;
+    }
+
+
 }
