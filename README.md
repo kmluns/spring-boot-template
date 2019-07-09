@@ -20,10 +20,11 @@
 - [x] Error - Exception Messages Get From Database(MongoDB) - Hata Mesajlarının Veri Tabanından Alınması
 - [x] GUI Texts Get From Database(MongoDB) - Kullanıcı Arayüzü Metinlerinin Veri Tabanından Alınması
 - [x] Created DEV-LOCAL-PROD Application Properties Templates - DEV-LOCAL-PROD Uygulama Özellikleri Şablonları Oluşturuldu
-- [x] Created Authorization Annotations Templates - Rol Kontrolü İçin Anatasyon Şablonları Oluşturuldu 
+- [x] Created Authorization Annotations Templates - Rol Kontrolü İçin Anotasyon Şablonları Oluşturuldu 
 - [x] MongoDB Inheritance Configuration - MongoDB Kalıtım Ayaları
 - [x] Added Example For Inheritance Config - Kalıtım Ayarları İçin Örnek Eklendi ( Note - Model&Controller&Service )
 - [x] Created Some Error - Exception Messages In Database - Veri Tabanına Bazı Hata Mesajları Eklendi
+- [x] Excel Reader Added - Excel Okuyucu
 
 
 ###### Will Do - Yapılacaklar
