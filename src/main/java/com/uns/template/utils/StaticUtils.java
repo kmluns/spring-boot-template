@@ -9,7 +9,6 @@ public final class StaticUtils {
 
     private StaticUtils(){}
 
-
     private static ErrorMessageService errorMessageService;
 
     public static ErrorMessageService getErrorMessageService() {

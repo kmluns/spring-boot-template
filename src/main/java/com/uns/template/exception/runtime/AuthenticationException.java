@@ -1,5 +1,6 @@
 package com.uns.template.exception.runtime;
 
+
 import com.uns.template.constant.ErrorMessageConstant;
 import com.uns.template.utils.StaticUtils;
 
@@ -9,7 +10,7 @@ import com.uns.template.utils.StaticUtils;
 public class AuthenticationException extends ApplicationRuntimeException {
 
     public AuthenticationException() {
-        super(StaticUtils.getErrorMessageService().getErrorMessageText(ErrorMessageConstant.AUTHENTICATION_ERROR));
+        super(StaticUtils.getErrorMessageService().getErrorMessageText(ErrorMessageConstant.AUTHENTICATION_ERROR),ErrorMessageConstant.AUTHENTICATION_ERROR);
     }
 
 }

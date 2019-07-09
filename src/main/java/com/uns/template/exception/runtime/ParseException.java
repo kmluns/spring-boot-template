@@ -1,5 +1,6 @@
 package com.uns.template.exception.runtime;
 
+
 import com.uns.template.constant.ErrorMessageConstant;
 import com.uns.template.utils.StaticUtils;
 
@@ -8,6 +9,6 @@ import com.uns.template.utils.StaticUtils;
  **/
 public class ParseException extends ApplicationRuntimeException {
     public ParseException() {
-        super(StaticUtils.getErrorMessageService().getErrorMessageText(ErrorMessageConstant.PARSE_ERROR));
+        super(StaticUtils.getErrorMessageService().getErrorMessageText(ErrorMessageConstant.PARSE_ERROR),ErrorMessageConstant.PARSE_ERROR);
     }
 }
