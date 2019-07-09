@@ -1,4 +1,4 @@
-package com.uns.template.model.account;
+package com.uns.template.authorization.model;
 
 import lombok.Getter;
 import lombok.Setter;

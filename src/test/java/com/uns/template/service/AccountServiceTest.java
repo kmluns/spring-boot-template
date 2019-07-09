@@ -3,7 +3,7 @@ package com.uns.template.service;
 import com.uns.template.authorization.model.Account;
 import com.uns.template.authorization.model.Role;
 import com.uns.template.dto.request.AccountDTO;
-import com.uns.template.model.account.AccountDetail;
+import com.uns.template.authorization.model.AccountDetail;
 import com.uns.template.repository.authorization.AccountRepository;
 import org.junit.Assert;
 import org.junit.Before;

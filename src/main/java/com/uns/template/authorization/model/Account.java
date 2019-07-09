@@ -1,7 +1,6 @@
 package com.uns.template.authorization.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.uns.template.model.account.AccountDetail;
 import com.uns.template.model.utils.Base;
 import lombok.Getter;
 import lombok.Setter;
